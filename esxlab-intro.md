@@ -23,12 +23,12 @@ The overall process will be as follows:
   - Re-Generate MAC Addresses, capture them *(i.e write them down)*, add to dhcp scope
 
 
-- [**Setup DHCP**](./net_config/host-dhcp_config.md)
+- [**Setup DHCP**](./net_config/net-dhcp_config.md)
   - Modify the host vmnet dhcpd.conf files
   - Use the MACs captured to assign IPs to VMs to create DNS entries
 
 
-- [**Setup DNS**](./net_config/host-dns_config.md)
+- [**Setup DNS**](./net_config/net-dns_config.md)
   - vCenter server
   - 3 virtual hosts
   - 1 DNS Server (tiny ubuntu 18.04 with bind)
