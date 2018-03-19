@@ -17,4 +17,4 @@ The following are necessary to get this running:
 
 ### Installing
 
-Begin with [esxlab-intro.md](./esxlab-intro.md) to get started
+Begin with [esxlab-start.md](./esxlab-start.md) to get started
