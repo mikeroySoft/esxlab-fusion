@@ -29,17 +29,17 @@ The overall process will be as follows:
 
 
 - [**Setup DNS**](./net_config/host-dns_config.md)
- - vCenter server
- - 3 virtual hosts
- - 1 DNS Server (tiny ubuntu 18.04 with bind)
- - 1 vSAN shared storage setup
+  - vCenter server
+  - 3 virtual hosts
+  - 1 DNS Server (tiny ubuntu 18.04 with bind)
+  - 1 vSAN shared storage setup
 
 
 - [**Deploy the vCenter Server Appliance OVA**](./host_config/host-deploy_vcsa.md)
- - extract .ova file from .iso
- - file > new > import > .ova
- - vCSA configuration walkthrough built into Fusion (do not boot yet)
- - Reconfigure the vCSA virtual hardware before booting for performance
+  - extract .ova file from .iso
+  - file > new > import > .ova
+  - vCSA configuration walkthrough built into Fusion (do not boot yet)
+  - Reconfigure the vCSA virtual hardware before booting for performance
 
 
 - [**Boot the vCSA**](./host_config/host-deploy_vcsa.md)
