@@ -17,4 +17,4 @@ The following are necessary to get this running:
 
 ### Installing
 
-Begin with [esxlab-intro.md](./mgmt-vsphere_lab_buildout.md) to get started
+Begin with [esxlab-intro.md](./esxlab-intro.md) to get started
