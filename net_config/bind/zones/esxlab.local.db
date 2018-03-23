@@ -14,5 +14,5 @@ esxlab.local.      IN      NS              esxlab-dns.esxlab.local.
 esxlab-dns   IN  A      10.20.20.20
 vcsa         IN  A      10.20.20.31
 vhost1       IN  A      10.20.20.41
-vhost2       IN  A      10.20.20.51
-vhost3       IN  A      10.20.20.61
+vhost2       IN  A      10.20.20.42
+vhost3       IN  A      10.20.20.43
