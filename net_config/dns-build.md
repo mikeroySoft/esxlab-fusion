@@ -27,3 +27,8 @@ http://releases.ubuntu.com/releases/16.04/ubuntu-16.04.4-server-amd64.iso
   - Add a 2nd VM, assign it to the vmnet7 network
     - No MAC generation needed, we can let it happen automatically
     - Make sure "connected" is checked
+
+
+Power up the VM and see that it gets the right IP addresses, then run an apt update / upgrade to grab bug and security patches.
+
+Now we can get to configuring [bind9](http://www.bind9.net) using [this document](./net-dns_config).
