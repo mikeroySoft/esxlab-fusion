@@ -1,3 +1,6 @@
+<!--
+host_config/esxlab-start.md
+-->
 # esxlab-fusion Introduction
 
 ## Overview
@@ -29,9 +32,9 @@ The overall process will be as follows:
 
 
 - [**Setup DNS**](./net_config/net-dns_config.md)
-  - vCenter server
-  - 3 virtual hosts
-  - 1 DNS Server (tiny ubuntu 18.04 with bind)
+  - vCenter server (vCSA 6.5)
+  - 3 virtual hosts (ESXi 6.5)
+  - 1 DNS Server (Ubuntu + bind9, but you could also use Windows domain services)
   - 1 vSAN shared storage setup
 
 
