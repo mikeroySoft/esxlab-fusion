@@ -1,6 +1,4 @@
-# 20.20.10.in-addr.arpa
-
-@ IN SOA esxlab-dns.esxlab.local. admin.esxlab.local. (
+@ IN SOA dns.esxlab.local. admin.esxlab.local. (
                         2006081401;
                         28800;
                         604800;
@@ -8,13 +6,10 @@
                         86400
 )
 
-           IN    NS     esxlab-dns.esxlab.local.
-53         IN    PTR    esxlab.local
-19	   IN	 PTR	vcsa
-20	   IN	 PTR	vhost1
-21	   IN	 PTR	vhost2
-22     IN  PTR  vhost3
-
-/etc/resolve.conf
-search esxlab.local
-nameserver 10.20.20.20
+           IN     NS     dns.esxlab.local.
+1          IN     PTR    esxlab.local
+31         IN     PTR    vcsa
+20         IN     PTR    dns
+41         IN     PTR    vhost1
+42         IN     PTR    vhost2
+43         IN     PTR    vhost3

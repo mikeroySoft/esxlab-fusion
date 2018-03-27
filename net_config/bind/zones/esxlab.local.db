@@ -1,17 +1,16 @@
-# $TTL	86400 ; 24 hours could have been written as 24h or 1d
-; $TTL used for all RRs without explicit TTL value
+$TTL	86400
 $ORIGIN esxlab.local.
-@  1D  IN  SOA esxlab-dns.esxlab.local. hostmaster.esxlab.local. (
+@  1D  IN  SOA dns.esxlab.local. hostmaster.esxlab.local. (
 			      2002022401 ; serial
 			      3H ; refresh
 			      15 ; retry
 			      1w ; expire
 			      3h ; minimum
 			     )
-esxlab.local.      IN      NS              esxlab-dns.esxlab.local.
+esxlab.local.      IN      NS              dns.esxlab.local.
 
 
-esxlab-dns   IN  A      10.20.20.20
+dns          IN  A      10.20.20.20
 vcsa         IN  A      10.20.20.31
 vhost1       IN  A      10.20.20.41
 vhost2       IN  A      10.20.20.42

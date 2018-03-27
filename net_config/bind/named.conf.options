@@ -1,0 +1,12 @@
+options {
+        directory "/var/cache/bind";
+
+        recursion yes;                   # enables recursive queries
+        listen-on { 10.20.20.20; };      # dns private IP address
+        allow-transfer { none; };        # disable zone transfers by default
+
+        forwarders {
+          8.8.8.8;
+          8.8.4.4;
+        };
+};
