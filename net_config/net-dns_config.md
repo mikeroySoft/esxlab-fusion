@@ -2,9 +2,14 @@
 net_config/net-dns_config.md
 -->
 
-## Network DNS 
+## Network DNS
 
 Here's our network naming layout:
+
+My Host networking is on the 10.0.1.0/24 network (physical.) This is my WiFi network the iMac is on. DNS services are running [in an Ubuntu VM](./dns-build.md) that is on Bridged network, and the vCSA is assigned a static IP and the DNS server at .75.
+
+Your network will be different and your config files should reflect that.
+
 
 | Host  | Role  | FQDN | IP |
 |---|---|---|---|
@@ -17,33 +22,29 @@ Here's our network naming layout:
 
 <br>
 
-## In DNS box (I'm using ubuntu 17.04):
+## In the DNS VM
 
-Create the zone folder and the files for our custom config:
+*(I'm using ubuntu 16.04 for simplicity)*
+
+1) Create the zone folder and the files for our custom config:
 
 ```sudo mkdir /etc/bind/zones ```
 
-Create /etc/bind/zones/[esxlab.local.db](./bind/zones/esxlab.local.db)
+2) Create /etc/bind/zones/[esxlab.local.db](./bind/zones/esxlab.local.db)
 
-```sudo nano /etc/bind/zones/esxlab.local.db```
+```sudo nano /etc/bind/zones/esxlab.local.db``` and replace the IP scheme with your own
 
-And /etc/bind/zones/[20.20.10.in-addr.arpa](./bind/zones/20.20.10.in-addr.arpa)
+3) Create /etc/bind/zones/[10.0.10.in-addr.arpa](./bind/zones/10.0.10.in-addr.arpa), replace the IP scheme with your own.
+- The filename should also reflect your IP scheme. For example, if you're using 192.168.1.0/24, your reverse lookup file would be 1.168.192.in-addr.arpa, and contain records for a 192.168.1.0 network.
 
-```sudo nano /etc/bind/zones/20.20.10.in-addr.arpa```
+```sudo nano /etc/bind/zones/10.0.10.in-addr.arpa``` 
 
 
-Set the DNS nameserver in /etc/resolvconf/[resolv.conf.d/base](resolv.conf.d/base)
+4) Set the DNS nameserver in /etc/resolvconf/[resolv.conf.d/base](resolv.conf.d/base)
 
 ```$ sudo nano /etc/resolvconf/resolv.conf.d/base```
 
 
-Now update resolvconf:
+5) Now update resolvconf:
 
 ```$ sudo resolvconf -u```
-
-
-
-
-### On the Mac Host
-cd /Library/Preferences/VMware\ Fusion
-nano vmnet2/dhcpd.conf

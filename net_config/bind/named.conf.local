@@ -3,14 +3,16 @@ zone "esxlab.local" {
         file "/etc/bind/zones/esxlab.local.db";
         };
 
-# Management Network reverse dns
-zone "20.20.10.in-addr.arpa" {
-     type master;
-     file "/etc/bind/zones/20.20.10.in-addr.arpa";
-};
-
 # Bridged Network reverse dns
 zone "10.0.10.in-addr.arpa" {
      type master;
      file "/etc/bind/zones/10.0.10.in-addr.arpa";
+};
+
+# End of Quick Start DNS config
+
+# Full lab Management Network reverse dns
+zone "20.20.10.in-addr.arpa" {
+     type master;
+     file "/etc/bind/zones/20.20.10.in-addr.arpa";
 };

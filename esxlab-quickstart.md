@@ -4,19 +4,20 @@ esxlab-quickstart.md
 
 ## Quick Start Guide
 
-The goal of this configuration will be to have a simple vCenter Server running with 3 number of ESXi nodes, with very basic networking.
+The goal of this configuration will be to have a simple vCenter Server running with 3 ESXi hosts and very basic networking.
 
 The overall process will be as follows:
-    
+
 - [**Setup DNS**](./net_config/net-dns_config.md)
  - Forward and Reverse lookup for:
-     - vCenter server (vCSA 6.5)
+     - vCenter server (VCSA 6.5)
+       - the VCSA ***requires*** full forward and reverse lookup to boot properly. It will not boot properly if this is not in place before starting the vCSA.
      - 3 virtual hosts (ESXi 6.5)
      - 1 DNS Server
   - DNS VM Bridged network
 
 
-- [**Create and configure virtual host(s)**](./host_config/host-setup_vhosts.md)
+- [**Create and configure virtual host(s)**](./host_config/host-install_esx.md)
   - remove unnecessary virtual hardware components (Camera, USB Adapter)
   - Configure Network Adapters
     - Configure existing NIC: Bridged(Autodetect)

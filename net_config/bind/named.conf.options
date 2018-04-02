@@ -2,7 +2,7 @@ options {
         directory "/var/cache/bind";
 
         recursion yes;                   # enables recursive queries
-        listen-on { any };      # dns private IP address
+        listen-on { any };               # dns private IP address
         allow-transfer { none; };        # disable zone transfers by default
 
         forwarders {

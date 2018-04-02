@@ -4,6 +4,8 @@ net_config/net-dhcp_config.md
 
 # Fusion DHCP Setup
 
+DHCP configuration is not required if using the Quick Start guide. This is for more advanced LAB buildouts.
+
 By default, VMware Fusion comes with a dhcpd daemon to provide IP addresses to guest VMs.
 While static IP addressing works as long as it's outside of the allocated DHCP range,  the preferred method is to use dhcp.
 DHCP allows you to also replace a VM without having to reconfigure it's place in the network. Simply use the same MAC address as the deleted VM and the new vm takes it's place.

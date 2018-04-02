@@ -1,3 +1,4 @@
 // resolv.conf.d.base
-nameserver 10.20.20.20
+// Be sure to use the IP of your actual nameserver here.
+nameserver 10.0.10.75
 nameserver 8.8.8.8
