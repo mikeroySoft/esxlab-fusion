@@ -1,5 +1,5 @@
 <!--
-host_config/esxlab-start.md
+host_config/esxlab-full_lab.md
 -->
 # esxlab-fusion Introduction
 
