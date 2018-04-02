@@ -10,8 +10,8 @@ $ORIGIN esxlab.local.
 esxlab.local.      IN      NS              dns.esxlab.local.
 
 
-dns          IN  A      10.20.20.20
-vcsa         IN  A      10.20.20.31
-vhost1       IN  A      10.20.20.41
-vhost2       IN  A      10.20.20.42
-vhost3       IN  A      10.20.20.43
+dns          IN  A      10.0.10.75
+vcsa         IN  A      10.0.10.131
+vhost1       IN  A      10.0.10.141
+vhost2       IN  A      10.0.10.142
+vhost3       IN  A      10.0.10.143

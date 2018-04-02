@@ -1,0 +1,15 @@
+@ IN SOA dns.esxlab.local. admin.esxlab.local. (
+                        2006081401;
+                        28800;
+                        604800;
+                        604800;
+                        86400
+)
+
+           IN     NS     dns.esxlab.local.
+1          IN     PTR    esxlab.local
+75         IN     PTR    dns
+131        IN     PTR    vcsa
+141        IN     PTR    vhost1
+142        IN     PTR    vhost2
+143        IN     PTR    vhost3
