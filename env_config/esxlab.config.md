@@ -7,6 +7,8 @@ Use this file to keep a record of your own network layout and settings
 
 # ESX Lab Config
 
+Use this file to keep a record of your own network layout and settings
+
 ## Lab Host Design
 
 | Host  | Role  | FQDN | IP |
