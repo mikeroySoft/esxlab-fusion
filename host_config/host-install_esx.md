@@ -42,5 +42,6 @@ Follow [this document](./host-setup_vhosts.md) for information about configuring
 
 Repeat for each Virtual ESXi Host required.
 
-Full Cloning is not advised as the storage device UID's would not change, causing a conflict in vCSA when trying to add Host 2 and more.
-Each ESXi host must be installed.
+Full Cloning is not advised as the storage device UID's would not change, causing a conflict in vCSA when trying to add Host 2 and more. As such, each ESXi host must be installed.
+
+Advanced lab users can test AutoDeploy setups to automate the IP automatically add to an existing vsphere cluster, complete with complex networking. Autodeploy is currently outside the scope of this document.
