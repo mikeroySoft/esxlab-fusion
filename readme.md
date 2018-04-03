@@ -27,4 +27,6 @@ The following are necessary to get this running:
 
 ### Installing
 
-Begin with [esxlab-start.md](./esxlab-start.md) to get started, or use the quickstart guide located [here](./esxlab-quickstart.md).
+To get started, use the quickstart guide located [here](./esxlab-quickstart.md).
+
+Please feel free to submit issues and pull requests to help us improve =)
